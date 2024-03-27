@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+main {
+  min-height: 100vh;
+  background-color: hsl(0, 100%, 74%);
+  background-image: url(../images/bg-intro-mobile.png);
+  display: grid;
+  place-items: center;
+  padding-top: 80px;
+}
+main .container {
+  margin-bottom: 20px;
+  padding: 0 25px;
+  display: flex;
+  flex-direction: column;
+}
+main .container .intro {
+  color: white;
+  text-align: center;
+}
+main .container .intro h1 {
+  font-size: 30px;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+main .container .intro p {
+  margin-bottom: 65px;
+}
+main .container .signup p.adv {
+  background: hsl(248, 32%, 49%);
+  color: white;
+  padding: 20px 60px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+main .container .signup form {
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+}
+main .container .signup form .input {
+  position: relative;
+  margin-bottom: 15px;
+}
+main .container .signup form .input .err-icon {
+  display: none;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-60%);
+  right: 15px;
+  z-index: 2;
+}
+main .container .signup form .input input {
+  position: relative;
+  border: 1px solid hsl(246, 25%, 77%);
+  padding: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  width: 100%;
+}
+main .container .signup form .input span {
+  color: hsl(0, 100%, 74%);
+  font-size: 12px;
+}
+main .container .signup form input[type=submit] {
+  padding: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+  color: white;
+  background: hsl(154, 59%, 51%);
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  margin-bottom: 15px;
+}
+main .container .signup form p.terms {
+  font-size: 12px;
+  text-align: center;
+}
+main .container .signup form p.terms a {
+  color: hsl(0, 100%, 74%);
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  main {
+    background-image: url(../images/bg-intro-desktop.png);
+  }
+  main .container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1150px;
+  }
+  main .container .intro {
+    flex: 1;
+    text-align: start;
+    margin-right: 15px;
+  }
+  main .container .intro h1 {
+    font-size: 50px;
+    line-height: 1.1;
+    letter-spacing: -0.5px;
+    margin-bottom: 30px;
+  }
+  main .container .intro p {
+    width: 90%;
+  }
+  main .container .signup {
+    flex: 1;
+    max-width: 100%;
+    margin-left: auto;
+  }
+  main .container .signup p.adv {
+    margin-left: auto;
+  }
+  main .container .signup form {
+    padding: 40px;
+  }
+  main .container .signup form input {
+    padding-left: 30px;
+  }
+}
+
+.attribution {
+  padding: 1rem;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */
